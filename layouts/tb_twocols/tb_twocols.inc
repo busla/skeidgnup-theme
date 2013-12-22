@@ -8,6 +8,7 @@ $plugin = array(
   'theme' => 'tb_twocols',
   'css' => '../../css/style.css',
   'regions' => array(
+    'header' => t('Header'),
     'left' => t('Left side'),
     'right' => t('Right side'),
     'right-row-one' => t('Row one'),

@@ -14,30 +14,31 @@
  *   - $content['right']: Content in the right column.
  */
 ?>
-<div class="wrapper">
-  <div class="frontpage-left">
-    <h2>Fréttir</h2>
-    <div class="inside"><?php print $content['left']; ?></div>
-  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <?php print $content['header']; ?>
 
-<div class="frontpage-right">
-    <h2>Yfirlit</h2>
-      <div class="inside"><?php print $content['right']; ?></div>        
-        <div class="wrapper">
-          <div class="frontpage-right">
-            <div class="inside"><?php print $content['right-row-one']; ?></div>          
-          </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-7">
+       <?php print $content['left']; ?>
+    </div>
+  <div class="col-lg-5">
+      <div class="row">
+        <div class="col-lg-12">
+          <div><?php print $content['right-row-one']; ?></div>          
         </div>
-        <div class="wrapper">
-          <div class="frontpage-right">
-            <div class="inside"><?php print $content['right-row-two']; ?></div>          
-          </div>
-        </div>
-        <div class="wrapper">
-          <div class="frontpage-right">
-            <div class="inside"><?php print $content['right-row-three']; ?></div>          
-          </div>
-        </div>
-     
       </div>
-</div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div><?php print $content['right-row-two']; ?></div>          
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div><?php print $content['right-row-three']; ?></div>          
+        </div>
+      </div>
+    </div>
+

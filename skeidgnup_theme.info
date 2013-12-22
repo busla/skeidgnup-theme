@@ -13,6 +13,7 @@ regions[header]         = 'Top Bar'
 regions[highlighted]    = 'Highlighted'
 regions[help]           = 'Help'
 regions[slideshow]      = 'Slideshow'
+regions[promotions]     = 'Promotions'
 regions[content]        = 'Content'
 regions[sidebar_first]  = 'Primary'
 regions[sidebar_second] = 'Secondary'
@@ -26,6 +27,7 @@ regions[page_bottom]    = 'Page bottom'
 ;;;;;;;;;;;;;;;;;;;;;
 
 stylesheets[all][] = css/style.css
+stylesheets[all][] = yamm3/yamm/yamm.css
 exclude[js][] = '../bootstrap/js/bootstrap.js'
 
 ; For information on choosing the desired method, please read the Drupal
@@ -52,6 +54,7 @@ exclude[js][] = '../bootstrap/js/bootstrap.js'
  scripts[] = 'bootstrap/js/scrollspy.js'
  scripts[] = 'bootstrap/js/tab.js'
  scripts[] = 'bootstrap/js/transition.js'
+ scripts[] = 'js/dropdown_fade.js'
 ;
 ; ; Disable BootstrapCDN if using Bootstrap source files in your sub-theme.
  settings[bootstrap_cdn] = ''

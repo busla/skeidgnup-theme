@@ -73,7 +73,7 @@
  * @ingroup themeable
  */
 ?>
-<header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
+<header id="navbar" role="banner" class="<?php print $navbar_classes; ?> yamm">
   <div class="container">
     <div class="navbar-header">
       <?php if ($logo): ?>
@@ -114,8 +114,9 @@
 </header>
 
 <?php if (!empty($page['slideshow']) && ($is_front)): ?>
-      <?php print render($page['slideshow']); ?>
+          <?php print render($page['slideshow']); ?>
 <?php endif; ?>
+
 
 <div class="main-container container">
 
@@ -126,7 +127,6 @@
 
     <?php print render($page['header']); ?>
   </header> <!-- /#page-header -->
-
   <div class="row">
 
     <?php if (!empty($page['sidebar_first'])): ?>
@@ -139,7 +139,7 @@
       <?php if (!empty($page['highlighted'])): ?>
         <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
       <?php endif; ?>
-      <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
+
       <a id="main-content"></a>
       <?php print render($title_prefix); ?>
       <?php if (!empty($title)): ?>
@@ -147,16 +147,18 @@
       <?php endif; ?>
       <?php print render($title_suffix); ?>
       <?php print $messages; ?>
-      <?php if (!empty($tabs)): ?>
-        <?php print render($tabs); ?>
-      <?php endif; ?>
       <?php if (!empty($page['help'])): ?>
         <?php print render($page['help']); ?>
       <?php endif; ?>
+
       <?php if (!empty($action_links)): ?>
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
+
       <?php print render($page['content']); ?>
+      <?php 
+      //dsm($page); 
+      ?>      
     </section>
 
     <?php if (!empty($page['sidebar_second'])): ?>
