@@ -26,30 +26,12 @@
 ?>
 
 
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <h3 class="panel-title"><?php print $fields['title']->content; ?></h3>
-  </div>
-  <div class="panel-body">
-    <div class="media">
-      <span class="pull-left">
-        <span class="media-object">
-        <?php print $fields['field_post_image']->content; ?>
-        </span>
-      </span>
-  
-      <div class="media-body">
-          <?php print $fields['field_post_body']->content; ?>
-      </div>
-    </div>
-  </div>
-  <div class="panel-footer">
-    <ol class="list-inline">
-      <li><span class="label label-default"><?php print $fields['field_post_category']->content; ?></span></li>
-      <li><span class="label label-default"><span class="glyphicon glyphicon-time"></span> <?php print $fields['created']->content; ?></span></li>
-    </ol>    
-  </div>
-</div>
+
+<h2><?php print $fields['title']->content; ?></h2>
+<?php print $fields['created']->content; ?>
+<?php print $fields['field_body']->content; ?>
+<?php print $fields['field_attachment']->content; ?>
+
 
 
 

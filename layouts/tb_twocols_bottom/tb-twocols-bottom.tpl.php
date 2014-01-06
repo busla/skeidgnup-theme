@@ -16,30 +16,26 @@
 ?>
   <div class="row">
     <div class="col-lg-12">
+
       <?php print $content['header']; ?>
 
     </div>
   </div>
+  
   <div class="row">
-    <div class="col-lg-7">
+    <div class="col-lg-8">
        <?php print $content['left']; ?>
     </div>
-  <div class="col-lg-5">
-      <div class="row">
-        <div class="col-lg-12">
-          <h3 class="page-header">Yfirlit</h3>
-          <div><?php print $content['right-row-one']; ?></div>          
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <div><?php print $content['right-row-two']; ?></div>          
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <div><?php print $content['right-row-three']; ?></div>          
-        </div>
-      </div>
-    </div>
+    
+    <div class="col-lg-4">
+       <?php print $content['right']; ?>
+    </div>    
+  </div>
+  
+  
+  <div class="row">
+    <div class="col-lg-12">
+         <?php print $content['bottom']; ?>            
+    </div>  
+  </div>
 

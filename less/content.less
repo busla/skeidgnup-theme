@@ -1,8 +1,8 @@
 @import url("http://fonts.googleapis.com/css?family=Cabin");
 
-body { 
-    background: url(../cloth_alike.png) repeat 0 0;
-    padding: 0px;
+html, body { 
+  background: url(../cloth_alike.png) repeat 0 0;
+  height: 100%;
 }
 
 .bg-orange {
@@ -20,4 +20,61 @@ background-color: green;
 
 .pane-page-breadcrumb {
   margin-top: 10px;
+}
+
+.nav-list {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.file-icon {
+  display: inline;
+}   
+.location-image {
+  float:right;
+  width: 400px;
+  padding:5px;
+  margin: 0px 5px 10px 5px;
+}
+
+td > ul {
+ list-style: none;
+ margin-left: 0;
+ padding-left: 1em;
+ text-indent: -1em;
+}
+
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+
+#footer {
+  height: 60px;
+  background-color: @green;
+  border-top: 1px solid @gray; 
+  border-bottom: 5px solid @blue;
+}
+
+.footer {
+  p, h2 {
+    color: @white;
+  }
+  
+}
+
+.footer a {
+  color: @white;
 }
