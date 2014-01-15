@@ -29,7 +29,16 @@
 <div class="row">
   <div class="col-lg-3 col-md-3 col-sm-5">
     <div class="thumbnail pull-left">
-      <?php print $fields['field_image']->content; ?>
+      <?php
+      if (!isset($fields['field_image']->content)) {
+        $news_image = '<img src="' . $GLOBALS['base_url'] .'/'; 
+        $news_image .= drupal_get_path('theme', 'skeidgnup_theme') . '/skeidgnup-logo-200px.png' . '" alt="Merki hreppsins" />';
+      }
+      else {
+        $news_image = $fields['field_image']->content;
+      } 
+      print $news_image;
+      ?>
     </div>  
   </div>
   <div class="col-lg-9 col-md-9 col-sm-7">

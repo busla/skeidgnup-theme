@@ -22,18 +22,10 @@ background-color: green;
   margin-top: 10px;
 }
 
-.nav-list {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-bottom: 0;
-}
 
-img {
-  display: block;
-  height: auto;
-  max-width: 100%;
+.thumbnail {
+  .img-responsive;
 }
-
 .file-icon {
   display: inline;
 }   
@@ -44,12 +36,6 @@ img {
   margin: 0px 5px 10px 5px;
 }
 
-td > ul {
- list-style: none;
- margin-left: 0;
- padding-left: 1em;
- text-indent: -1em;
-}
 
 #wrap {
   min-height: 100%;
@@ -77,4 +63,23 @@ td > ul {
 
 .footer a {
   color: @white;
+}
+
+.panel > .panel-heading {
+  background-color: @panel-heading-bg;
+  color: @white;
+
+    a {
+      color: @white;
+      text-decoration: none;
+    }
+    h1, h2, h3 {
+      text-transform: uppercase;
+      margin-top: 2px;
+      margin-bottom: 2px;
+    }
+}
+
+.navbar {
+  border-color: @brand-primary;
 }

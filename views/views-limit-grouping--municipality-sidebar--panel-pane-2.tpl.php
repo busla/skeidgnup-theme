@@ -17,10 +17,11 @@
 
     <div class="panel-body">
       <?php foreach ($rows as $id => $row): ?>
-        <div<?php if ($classes_array[$id]) { print ' class="' . $classes_array[$id] .'"';  } ?>>
+        <div>
           <?php print $row; ?>
         </div>
           <?php endforeach; ?>
     </div>
   </div>
 </div>
+

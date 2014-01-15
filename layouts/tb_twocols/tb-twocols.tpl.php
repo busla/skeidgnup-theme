@@ -22,18 +22,33 @@
   </div>
   <div class="row">
     <div class="col-lg-7">
-       <?php print $content['left']; ?>
+      <div class="panel panel-default">
+        <div class="panel-heading"><h1 class="panel-title">Fréttir, viðburðir og aðrar tilkynningar</h1></div>
+        <div class="panel-body">
+          <?php print $content['left']; ?>
+        </div>
+      </div>
+
     </div>
   <div class="col-lg-5">
       <div class="row">
         <div class="col-lg-12">
-          <h3 class="page-header">Yfirlit</h3>
-          <div><?php print $content['right-row-one']; ?></div>          
+      <div class="panel panel-default">
+        <div class="panel-heading"><h1 class="panel-title">Stjórnsýslan</h1></div>
+        <div class="panel-body">
+          <?php print $content['right-row-one']; ?>
+        </div>
+      </div>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-12">
-          <div><?php print $content['right-row-two']; ?></div>          
+      <div class="panel panel-default">
+        <div class="panel-heading"><h1 class="panel-title">Yfirlit</h1></div>
+        <div class="panel-body">
+          <?php print $content['right-row-two']; ?>
+        </div>
+      </div>
         </div>
       </div>
       <div class="row">

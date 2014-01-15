@@ -21,7 +21,6 @@ function skeidgnup_theme_preprocess_views_view_fields(&$vars) {
 }
 */
 
-
 function skeidgnup_theme_preprocess_views_view(&$vars) {
   if (isset($vars['view']->name)) {
     $function = 'skeidgnup_theme_preprocess_views_view__'.$vars['view']->name; 
@@ -31,10 +30,16 @@ function skeidgnup_theme_preprocess_views_view(&$vars) {
   }
 }
 
+/*
+function skeidgnup_theme_views_view__municipality_posts__panel_pane_10(&$vars) {
+  dpm($vars);
+}
+*/
+
 function skeidgnup_theme_preprocess_views_view_table(&$vars) {
   $vars['classes_array'][] = 'table';
   $vars['classes_array'][] = 'table-striped';
-  $vars['classes_array'][] = 'table-responsive';  
+//  $vars['classes_array'][] = 'table-responsive';  
 }
 
 
@@ -86,14 +91,14 @@ function skeidgnup_theme_preprocess_user_register_form(&$vars) {
 }
 
 
-/*
+
 function skeidgnup_theme_preprocess_field(&$vars) {
   $function = 'theme_preprocess_field__'. $vars['element']['#field_name'];
     if(function_exists($function)) {
       $vars = $function($vars);
     }
 }
-*/
+
 
 /*
 function skeidgnup_theme_field__field_staff(&$variables) {
