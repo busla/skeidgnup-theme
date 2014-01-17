@@ -24,40 +24,19 @@
  * @ingroup views_templates
  */
 ?>
-
-<div class="panel panel-default">
-<div class="panel-body">
-<div class="row">
-  <div class="col-lg-3 col-md-3 col-sm-5">
-    <div class="thumbnail pull-left">
-      <?php
-      if (!isset($fields['field_image']->content)) {
-        $news_image = '<img src="' . $GLOBALS['base_url'] .'/'; 
-        $news_image .= drupal_get_path('theme', 'skeidgnup_theme') . '/skeidgnup-logo-200px.png' . '" alt="Merki hreppsins" />';
-      }
-      else {
-        $news_image = $fields['field_image']->content;
-      } 
-      print $news_image;
-      ?>
-    </div>  
-  </div>
-  <div class="col-lg-9 col-md-9 col-sm-7">
-
-<h2><?php print $fields['title']->content; ?></h2>
-  <?php 
-    if(!empty($fields['field_body']->content)) {
-      print $fields['field_body']->content;
-    }
-  ?>
-  </div>  
+<div class="container-liquid">
+    <div class="row bg-green">
+      <div class="col-lg-6">
+            <?php print $fields['rendered']->content; ?>
+      </div>
+      <div class="col-lg-6 promotions-white promotions">
+        <?php print $fields['field_file_image_title_text']->content; ?>
+        <?php print $fields['field_file_image_alt_text']->content; ?>
+      </div>
+    </div>
 </div>
-<hr />
-<ul class="list-inline text-muted">
-  <li><span class="icon-clock"></span><?php print $fields['created']->content; ?></li>
-  <li class="pull-right"><span class="icon-user"></span><?php print $fields['field_real_name']->content; ?></li>
-</ul>
-<hr />
 
-</div>
-</div>
+
+
+
+

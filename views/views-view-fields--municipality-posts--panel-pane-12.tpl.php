@@ -24,19 +24,17 @@
  * @ingroup views_templates
  */
 ?>
-<div class="container-liquid">
-    <div class="row bg-orange">
-      <div class="col-lg-4">
-        <?php print $fields['rendered']->content; ?>
-      </div>
-      <div class="col-lg-8 promotions-white text-center promotions">
-        <p class="lead"><?php print $fields['field_file_image_title_text']->content; ?></p>
-          <p><?php print $fields['field_file_image_alt_text']->content; ?></p>
-      </div>
-    </div>
-</div>
 
 
+<hr />
+<ul class="list-inline">
+  <li><span class="icon-clock"></span><?php print $fields['created']->content; ?></li>
+  <li class="pull-right"><span class="icon-user"></span><?php print $fields['field_real_name']->content; ?></li>
+</ul>
 
-
-
+<hr />
+<?php 
+  if(!empty($fields['field_body']->content)) {
+    print $fields['field_body']->content;
+  }
+?>

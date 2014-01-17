@@ -24,13 +24,24 @@
  * @ingroup views_templates
  */
 ?>
+      <?php
+      print $fields['rendered']->content;
+      /*
+      if (!isset($fields['rendered']->content)) {
+        $news_image = '<img src="' . $GLOBALS['base_url'] .'/'; 
+        $news_image .= drupal_get_path('theme', 'skeidgnup_theme') . '/skeidgnup-logo-200px.png' . '" alt="Merki hreppsins" />';
+      }
+      else {
+        $news_image = $fields['rendered']->content;
+      } 
+      print $news_image;
+      */
+      ?>
 
 
 
-<h2><?php print $fields['title']->content; ?></h2>
-<?php print $fields['created']->content; ?>
-<?php print $fields['field_body']->content; ?>
-<?php print $fields['field_attachment']->content; ?>
+
+
 
 
 

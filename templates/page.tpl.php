@@ -115,12 +115,15 @@
   </div>
 </header>
 
-<?php if (!empty($page['slideshow']) && ($is_front)): ?>
-          <?php print render($page['slideshow']); ?>
-<?php endif; ?>
-
 
 <div class="main-container container">
+<?php if (!empty($page['slideshow']) && ($is_front)): ?>
+          <div class="panel panel-default"> 
+            <div class="panel-body">
+              <?php print render($page['slideshow']); ?>
+            </div>
+          </div>
+<?php endif; ?>
 
   <header role="banner" id="page-header">
     <?php if (!empty($site_slogan)): ?>
