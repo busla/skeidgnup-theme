@@ -25,8 +25,8 @@ regions[search_form]    = 'Search form'
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Stylesheets
 ;;;;;;;;;;;;;;;;;;;;;
-stylesheets[all][] = fonts/fontello-nonni/css/fontello.css
-stylesheets[all][] = fonts/fontello-nonni/css/fontello-ie7.css
+stylesheets[all][] = fonts/fontello/css/fontello.css
+stylesheets[all][] = fonts/fontello/css/fontello-ie7.css
 stylesheets[all][] = css/style.css
 stylesheets[all][] = yamm3/yamm/yamm.css
 exclude[js][] = '../bootstrap/js/bootstrap.js'

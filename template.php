@@ -21,6 +21,16 @@ function skeidgnup_theme_preprocess_views_view_fields(&$vars) {
 }
 */
 
+
+/*
+function skeidgnup_theme_preprocess_panels_pane($variables) {
+  //dpm('type: ' . $variables['pane']->type);
+  if ($variables['pane']->type == 'views_panes') {
+    kpr('subtype: ' . $variables['pane']->subtype);
+  }
+}
+
+*/
 function skeidgnup_theme_preprocess_views_view(&$vars) {
   if (isset($vars['view']->name)) {
     $function = 'skeidgnup_theme_preprocess_views_view__'.$vars['view']->name; 
