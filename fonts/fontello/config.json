@@ -109,6 +109,12 @@
       "src": "fontawesome"
     },
     {
+      "uid": "6a06892e76b81e023da6ddfb38a26b37",
+      "css": "doc-text",
+      "code": 59410,
+      "src": "typicons"
+    },
+    {
       "uid": "22cfc7af2c4f158b37317c65c92b48c2",
       "css": "location",
       "code": 59392,

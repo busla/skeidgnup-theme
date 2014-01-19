@@ -1,8 +1,7 @@
 @import url("http://fonts.googleapis.com/css?family=Cabin");
 
-html, body { 
+body { 
   background: url(../cloth_alike.png) repeat 0 0;
-  height: 100%;
 }
 
 .bg-green {
@@ -36,36 +35,7 @@ background-color: @green;
   margin: 0px 5px 10px 5px;
 }
 
-
-#wrap {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  /* Negative indent footer by its height */
-  margin: 0 auto -60px;
-  /* Pad bottom by footer height */
-  padding: 0 0 60px;
-}
-
-#footer {
-  height: 60px;
-  background-color: @green;
-  border-top: 1px solid @gray; 
-  border-bottom: 5px solid @blue;
-}
-
-.footer {
-  p, h2 {
-    color: @white;
-  }
-  
-}
-
-.footer a {
-  color: @white;
-}
-
-.panel .panel-heading {
+.panel > .panel-heading {
   background-color: @panel-heading-bg;
   color: @white;
 
