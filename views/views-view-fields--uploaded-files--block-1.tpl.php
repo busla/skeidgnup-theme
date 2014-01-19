@@ -29,7 +29,7 @@
       <div class="col-lg-6">
             <?php print $fields['rendered']->content; ?>
       </div>
-      <div class="col-lg-6 promotions-white promotions">
+      <div class="col-lg-4 promotions-white promotions">
         <?php print $fields['field_file_image_title_text']->content; ?>
         <?php print $fields['field_file_image_alt_text']->content; ?>
       </div>
