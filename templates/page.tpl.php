@@ -113,19 +113,6 @@
 
 
 <div class="main-container container">
-<?php if (!empty($page['slideshow']) && ($is_front)): ?>
-          <div class="panel panel-default"> 
-            <div class="panel-body">
-              <?php print render($page['slideshow']); ?>
-            </div>
-          </div>
-<?php endif; ?>
-
-  <?php if (($is_front)): ?>
-  <header role="banner" id="page-header">
-    <?php print render($page['header']); ?>
-  </header> <!-- /#page-header -->
-<?php endif; ?>
 
   <div class="row">
     <?php if (!empty($page['sidebar_first'])): ?>

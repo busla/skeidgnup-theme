@@ -15,11 +15,24 @@
  */
 ?>
   <div class="row">
-    <div class="col-lg-12">
+    <div class="col-lg-8">
       <?php print $content['header']; ?>
 
     </div>
+    <div class="col-lg-4">
+      <?php print $content['introduction']; ?>
+    </div>
   </div>
+  <div class="row">
+    <div class="col-lg-8">
+      <?php print $content['search_form']; ?>
+
+    </div>
+    <div class="col-lg-4">
+      <?php print $content['contact_links']; ?>
+    </div>
+  </div>
+
   <div class="row">
     <div class="col-lg-7">
       <div class="panel panel-default">
