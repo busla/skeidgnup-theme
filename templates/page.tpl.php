@@ -73,7 +73,7 @@
  * @ingroup themeable
  */
 ?>
-
+<div id="wrap">
 <header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
     <div class="navbar-header">
       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
@@ -105,8 +105,10 @@
         </nav>
         <div class="row">
           <div class="col-lg-3 col-md-3 col-sm-3">
-        <?php print $search_box; ?>
-        </div>
+          <?php if (!empty($page['search_form'])): ?>
+            <?php print render($page['search_form']); ?>
+          <?php endif; ?>
+          </div>
         </div>
       </div>
     <?php endif; ?>
@@ -158,7 +160,7 @@
 
   </div>
 </div>
-
+</div> <!-- Loka wrapper -->
 <footer class="footer">
   <div class="container">
     <div class="row">

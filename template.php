@@ -34,12 +34,14 @@ function skeidgnup_theme_preprocess_panels_pane($variables) {
 
 
 
+
 function skeidgnup_theme_form_alter(&$form, &$form_state, $form_id) {
-  if ($form_id == 'search_form') {  
-    unset($form['#attributes']['class']);
-    unset($form['basic']['#theme_wrappers']);
-    $form['#attributes']['class'][] = 'navbar-form';
-    $form['#attributes']['class'][] = 'navbar-right';
+  if ($form_id == 'search_block_form') {
+//    kpr($form);
+  
+//    unset($form['#attributes']['class']);
+    $form['#attributes']['class'][] = 'navbar-left';
+
   }
 }
 
