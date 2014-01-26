@@ -31,6 +31,25 @@ function skeidgnup_theme_preprocess_panels_pane($variables) {
 }
 
 */
+
+
+
+function skeidgnup_theme_form_alter(&$form, &$form_state, $form_id) {
+  if ($form_id == 'search_form') {  
+    unset($form['#attributes']['class']);
+    unset($form['basic']['#theme_wrappers']);
+    $form['#attributes']['class'][] = 'navbar-form';
+    $form['#attributes']['class'][] = 'navbar-right';
+  }
+}
+
+function skeidgnup_theme_preprocess_page(&$variables){
+//  kpr($variables);
+  $search_form = drupal_get_form('search_form');
+  $search_box = drupal_render($search_form);
+  $variables['search_box'] = $search_box;
+}
+
 function skeidgnup_theme_preprocess_views_view(&$vars) {
   if (isset($vars['view']->name)) {
     $function = 'skeidgnup_theme_preprocess_views_view__'.$vars['view']->name; 
