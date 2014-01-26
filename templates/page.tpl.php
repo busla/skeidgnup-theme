@@ -75,7 +75,6 @@
 ?>
 
 <header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
-  <div class="container">
     <div class="navbar-header">
       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -112,7 +111,7 @@
       </div>
     <?php endif; ?>
 
-  </div>
+
 </header>
 
 
